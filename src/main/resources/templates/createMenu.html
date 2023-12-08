@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/12d7e68c1e.js" crossorigin="anonymous"></script>
+	<title>Create Menu</title>
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">Home</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="menu">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin">Admin</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Report
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="orderByCostCenter">By Cost Center</a></li>
+							<li><a class="dropdown-item" href="orderByDate">By Date</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reportToday">Today</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Handbuch.pdf">Help</a>
+					</li>
+				</ul>
+				<form class="d-flex" action="order">
+					<button class="btn btn-outline-light" type="submit">Order Here!</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Body of the Website -->
+
+	<div class="container text-center my-5 border col-md-4 offset-md-4">
+		<h2> Create your new menu</h2>
+		<i class="fa-solid fa-apple-whole fa-2xl" style="color: #ff745c;"></i>
+		<hr>
+
+		<form th:action="@{/saveMenu}" method="post" th:object="${menu}">
+			<div class="form-floating mb-3">
+				<input type="text" class="form-control" id="floatingInput" placeholder="Name" th:field="*{name}">
+				<label for="floatingInput">Menu Name</label>
+			</div>
+
+			<div class="form-floating mb-3">
+				<input type="text" class="form-control" id="floatingInput" placeholder="Description"
+					th:field="*{description}">
+				<label for="floatingInput">Description</label>
+			</div>
+
+			<div class="form-floating mb-3">
+				<input type="text" class="form-control" id="floatingInput" placeholder="Price" th:field="*{price}">
+				<label for="floatingInput">Price</label>
+			</div>
+			<div class="form-floating mb-3">
+				<button type="submit" class="btn btn-outline-primary">Create Menu</button>
+			</div>
+		</form>
+	</div>
+
+
+</body>
+
+</html>

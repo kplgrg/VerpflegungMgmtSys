@@ -1,0 +1,40 @@
+
+Bei diesem Projekt handelt es sich um eine Webanwendung, die mit Spring Boot und Thymeleaf erstellt wurde und deren Daten in 
+einer PostgreSQL-Datenbank gespeichert werden.
+Das Front-End-Design nutzt Bootstrap und Chart.js für Visualisierungen.
+
+
+Quellen für Software:
+  
+  1. Spring Tool Suite (STS). v4.12.0 [Computer software]. VMware, Inc. 2021. Available from https://spring.io/tools
+  
+  2. Bootstrap. v5.3.1 [Computer software]. Twitter, Inc. 2021. Available from https://getbootstrap.com/docs/5.3.1/
+  
+  	 Used Components:
+	  - Forms (Bootstrap Form components): https://getbootstrap.com/docs/5.3.1/forms/
+	  - Tables (Bootstrap Table components): https://getbootstrap.com/docs/5.3.1/content/tables/
+	  - Nav (Bootstrap Nav components): https://getbootstrap.com/docs/5.3.1/components/navs/
+	  - Navbar (Bootstrap Navbar components): https://getbootstrap.com/docs/5.3.1/components/navbar/  
+		  
+  3. Chart.js. v3.7.0 [Computer software]. Chart.js Contributors. 2023. Available from https://www.chartjs.org/
+  
+  4. Thymeleaf. v3.0.12 [Computer software]. Thymeleaf Team. 2022. Available from https://www.thymeleaf.org/
+
+  5. PostgreSQL. v14.0 [Computer software]. PostgreSQL Global Development Group. 2021. Available from https://www.postgresql.org/
+  
+  6. draw.io (diagrams.net). v14.6.14 [Computer software]. JGraph Ltd. 2021. Available from https://www.diagrams.net/
+  
+  7. Java Programming Language (Version 17). Oracle Corporation. Available from https://www.java.com/
+  
+  8. Canva. [Computer software]. Canva Pty Ltd. 2021. Available from https://www.canva.com/
+  
+ 
+Quellen für Bilder: 
+   
+  1. Sugar and Charm. (2023, Apr). In the mix with Proof Bakery [Image]. Retrieved July 20, 2023, from https://sugarandcharm.com/in-the-mix-with-proof-bakery
+  
+  2. Instakoch.de. (2022, Sep). Omelett Grundrezept [Image]. Retrieved July 20, 2023, from https://instakoch.de/omelett-grundrezept/
+  
+  3. Now Forager. (2015, Oct). Chocolate Ganache Celebration Cake [Image]. Retrieved July 20, 2023, from https://now-forager.com/chocolate-ganache-celebration-cake/
+  
+  4. NicePNG. (n.d.). Splash Coffee Cups Vector Coffee Cup PNG. Retrieved [Accessed Date], from https://www.nicepng.com/ourpic/u2e6w7y3q8o0q8r5_splash-coffee-cups-vector-coffee-cup-png/

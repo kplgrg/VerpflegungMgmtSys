@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns :th="https://www.thymeleaf.org">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Menu</title>
+	<style>
+		.product-details {
+			font-family: 'Satisfy';
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3" style="position: sticky; top:0; ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">Home</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="menu">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin">Admin</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Report
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="orderByCostCenter">By Cost Center</a></li>
+							<li><a class="dropdown-item" href="orderByDate">By Date</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="reportToday">Today</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Handbuch.pdf">Help</a>
+					</li>
+				</ul>
+				<form class="d-flex" action="order">
+					<button class="btn btn-outline-light" type="submit">Order Here!</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Body of the Website -->
+	<div class="container text-center py-2">
+		<img src="/images/Menu.gif" class="img-fluid" style="height: 300px;" alt="...">
+		<hr>
+
+		<div class="container text-center my-3">
+			<header class="bg-dark text-white text-center py-5">
+				<h1 class="product-details">Unsere leckeres Angebot</h1>
+			</header>
+
+			<section class="container mt-5">
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<img src="/images/Menu_1.jpeg" class="figure-img img-fluid rounded">
+					</div>
+					<div class="col-md-6 mb-4 product-details">
+						<h1>' Light '</h1>
+						<h2>Coffee or tee of your choice with a cookie</h2>
+						<h4>When you need a break !</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-4 product-details">
+						<h1>' Medium '</h1>
+						<h2>Chocolate cake with coffee or tee</h2>
+						<h4>Wenn Du lange Tag hast !</h3>
+					</div>
+					<div class="col-md-6 mb-4">
+						<img src="/images/Menu_2.jpeg" class="figure-img img-fluid rounded">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<img src="/images/Menu_3.jpeg" class="figure-img img-fluid rounded">
+					</div>
+					<div class="col-md-6  product-details">
+						<h1>' Brotzeit Omelette '</h1>
+						<h2>Bread with omellette and coffee or tea of your choice</h2>
+						<h4> Du bist nicht Du, wenn Du hungrig bist !</h3>
+					</div>
+				</div>
+
+				<!-- Add more product rows as needed -->
+			</section>
+			<header class="bg-dark text-white text-center py-5">
+				<h1 class="product-details">More menus coming . . .</h1>
+			</header>
+		</div>
+</body>
+
+</html>
